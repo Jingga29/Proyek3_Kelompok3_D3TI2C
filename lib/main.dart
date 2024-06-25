@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-//import 'login.dart'; // Import login page
+// import 'login.dart'; // Import login page
 import 'signup.dart'; // Import sign up page
-import 'dashboard.dart';
-import 'profil.dart';
+import 'dashboard.dart'; // Import dashboard page
+import 'profil.dart'; // Import profile page
 
 void main() {
   runApp(MyApp());
@@ -16,8 +16,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: MyHomePage(),
       routes: {
-        //'/login': (context) => LoginPage(), 
-        '/signup': (context) => SignUpPage(), 
+        // '/login': (context) => LoginPage(), // Define login route
+        '/signup': (context) => SignUpPage(), // Define sign up route
+        '/dashboard': (context) => Dashboard(), // Define dashboard route
+        '/profil': (context) => EditProfilePage(), // Define profile route
       },
     );
   }
@@ -83,8 +85,7 @@ class MyHomePage extends StatelessWidget {
                   children: [
                     ElevatedButton(
                       onPressed: () {
-                        // Aksi ketika tombol Sign Up ditekan
-                        Navigator.pushNamed(context, '/signup'); // Navigasi ke halaman sign up
+                        Navigator.pushNamed(context, '/signup'); // Navigate to sign up page
                       },
                       child: Text(
                         'Sign Up',
@@ -99,7 +100,7 @@ class MyHomePage extends StatelessWidget {
                     ),
                     ElevatedButton(
                       onPressed: () {
-                        Navigator.pushNamed(context, '/login'); // Navigasi ke halaman login
+                        Navigator.pushNamed(context, '/login'); // Navigate to login page
                       },
                       child: Text(
                         'Log In',
