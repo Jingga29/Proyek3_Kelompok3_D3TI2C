@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 //import 'login.dart'; // Import login page
 import 'signup.dart'; // Import sign up page
 import 'dashboard.dart';
+import 'profil.dart';
 
 void main() {
   runApp(MyApp());
