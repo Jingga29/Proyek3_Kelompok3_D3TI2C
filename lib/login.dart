@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-//import 'login.dart'; // Impor halaman login
+import 'package:proyek3/signup.dart';
+import 'login.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -34,7 +35,7 @@ class LoginPage extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 28,
                       fontWeight: FontWeight.bold,
-                      color: Colors.black,
+                      color: Colors.white,
                     ),
                     textAlign: TextAlign.center,
                   ),
@@ -75,11 +76,10 @@ class LoginPage extends StatelessWidget {
                   SizedBox(height: 20),
                   TextButton(
                     onPressed: () {
-                      // Navigasi ke halaman login ketika teks diklik
-                      //Navigator.push(
-                        //context,
-                        //MaterialPageRoute(builder: (context) => LoginPage()),
-                      //);
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => SignUpPage()),
+                      );
                     },
                     child: Text(
                       'Belum punya akun? Sign Up',
