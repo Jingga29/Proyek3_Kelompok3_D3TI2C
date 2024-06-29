@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-//import 'login.dart'; // Impor halaman login
+import 'login.dart';
 
 class SignUpPage extends StatelessWidget {
   @override
@@ -92,11 +92,10 @@ class SignUpPage extends StatelessWidget {
                   SizedBox(height: 20),
                   TextButton(
                     onPressed: () {
-                      // Navigasi ke halaman login ketika teks diklik
-                      //Navigator.push(
-                        //context,
-                        //MaterialPageRoute(builder: (context) => LoginPage()),
-                      //);
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => LoginPage()),
+                      );
                     },
                     child: Text(
                       'Sudah punya akun? Log in',
