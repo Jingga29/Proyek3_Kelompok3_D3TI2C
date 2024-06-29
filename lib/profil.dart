@@ -15,7 +15,7 @@ class EditProfilePage extends StatelessWidget {
           leading: IconButton(
             icon: Icon(Icons.arrow_back),
             onPressed: () {
-              Navigator.of(context).pop(); // Navigate back when the back button is pressed
+              Navigator.of(context).pop(); 
             },
           ),
         ),

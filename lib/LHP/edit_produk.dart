@@ -64,7 +64,7 @@ class _UbahProdukState extends State<UbahProduk> {
           pickedTime.minute,
         );
         setState(() {
-          tanggal.text = DateFormat('yyyy-MM-dd HH:mm').format(combinedDateTime); // Format the date and time
+          tanggal.text = DateFormat('yyyy-MM-dd HH:mm').format(combinedDateTime); 
         });
       }
     }

@@ -52,7 +52,7 @@ class _TambahProdukState extends State<TambahProduk> {
       if (pickedTime != null) {
         final DateTime dateTime = DateTime(pickedDate.year, pickedDate.month, pickedDate.day, pickedTime.hour, pickedTime.minute);
         setState(() {
-          tanggal.text = DateFormat('yyyy-MM-dd HH:mm').format(dateTime); // Format the date and time
+          tanggal.text = DateFormat('yyyy-MM-dd HH:mm').format(dateTime); 
         });
       }
     }

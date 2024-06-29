@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:intl/intl.dart';
-import 'package:proyek3/nota_pembelian/halaman_pembelian.dart'; // Untuk format tanggal
+import 'package:proyek3/nota_pembelian/halaman_pembelian.dart';
 
 
 class TambahPembelian extends StatefulWidget {
@@ -82,7 +82,7 @@ class _TambahPembelianState extends State<TambahPembelian> {
               children: [
                 TextFormField(
                   controller: tanggal,
-                  readOnly: true, // Membuat input tidak dapat diedit langsung
+                  readOnly: true,
                   onTap: () => _selectDate(context),
                   decoration: InputDecoration(
                     hintText: 'Tanggal',
@@ -91,8 +91,8 @@ class _TambahPembelianState extends State<TambahPembelian> {
                     ),
                     suffixIcon: GestureDetector(
                       onTap: () => _selectDate(context),
-                      child: Icon(Icons.calendar_today), // Icon tanggal
-                    ), // Icon tanggal
+                      child: Icon(Icons.calendar_today), 
+                    ), 
                   ),
                   validator: (value) {
                     if (value!.isEmpty) {

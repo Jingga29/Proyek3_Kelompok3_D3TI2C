@@ -57,7 +57,6 @@ class LoginPage extends StatelessWidget {
                   SizedBox(height: 20),
                   ElevatedButton(
                     onPressed: () {
-                      // Navigate to the dashboard page
                       Navigator.pushNamed(context, '/dashboard');
                     },
                     style: ElevatedButton.styleFrom(

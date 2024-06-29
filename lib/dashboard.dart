@@ -124,30 +124,33 @@ class _DashboardState extends State<Dashboard> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
-  type: BottomNavigationBarType.fixed,
-  backgroundColor: Color(0xFF0F8EEB),
-  selectedItemColor: Colors.white,
-  unselectedItemColor: Colors.white.withOpacity(.60),
-  selectedFontSize: 14,
-  unselectedFontSize: 14,
-  onTap: (value) {
-    // Respond to item press.
-  },
-  items: [
-    BottomNavigationBarItem(
-      label: 'home',
-      icon: Icon(Icons.home),
-    ),
-    BottomNavigationBarItem(
-      label: 'notif',
-      icon: Icon(Icons.notifications),
-    ),
-    BottomNavigationBarItem(
-      label: 'profile',
-      icon: Icon(Icons.person),
-    ),
-  ],
-),
+        type: BottomNavigationBarType.fixed,
+        backgroundColor: Color(0xFF0F8EEB),
+        selectedItemColor: Colors.white,
+        unselectedItemColor: Colors.white.withOpacity(.60),
+        selectedFontSize: 14,
+        unselectedFontSize: 14,
+        onTap: (index) {
+          if (index == 2) {
+            Navigator.pushNamed(context, '/profil');
+          }
+          
+        },
+        items: [
+          BottomNavigationBarItem(
+            label: 'home',
+            icon: Icon(Icons.home),
+          ),
+          BottomNavigationBarItem(
+            label: 'notif',
+            icon: Icon(Icons.notifications),
+          ),
+          BottomNavigationBarItem(
+            label: 'profile',
+            icon: Icon(Icons.person),
+          ),
+        ],
+      ),
     );
   }
 

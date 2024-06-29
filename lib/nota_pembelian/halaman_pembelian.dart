@@ -99,7 +99,7 @@ class _HalamanPembelianState extends State<HalamanPembelian> {
                       title: Text(_listdata[index]['tanggal']),
                       subtitle: Text(_listdata[index]['nama_petani']),
                       trailing: Wrap(
-                        spacing: 12, // space between two icons
+                        spacing: 12, 
                         children: <Widget>[
                           IconButton(
                             icon: Icon(Icons.edit, color: Color.fromARGB(255, 38, 132, 42)),
@@ -190,7 +190,7 @@ class _HalamanPembelianState extends State<HalamanPembelian> {
         tooltip: 'Tambah Nota Pembelian',
         child: Icon(
           Icons.add,
-          color: Colors.white, // Warna ikon putih
+          color: Colors.white,
         ),
       ),
     );

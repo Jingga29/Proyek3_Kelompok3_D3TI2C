@@ -81,7 +81,7 @@ class _HalamanProdukState extends State<HalamanProduk> {
               itemCount: _listdata.length,
               itemBuilder: (context, index) {
                 return Card(
-                  color: Color.fromARGB(255, 202, 233, 255), // Menjadikan card berwarna biru
+                  color: Color.fromARGB(255, 202, 233, 255), 
                   child: InkWell(
                     onTap: () {
                       Navigator.push(
