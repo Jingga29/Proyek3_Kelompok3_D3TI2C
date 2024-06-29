@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'login.dart'; // import login page
-import 'signup.dart'; // Import sign up page
-import 'dashboard.dart'; // Import dashboard page
-import 'profil.dart'; // Import profile page
+import 'login.dart'; 
+import 'signup.dart'; 
+import 'dashboard.dart'; 
+import 'profil.dart'; 
 
 void main() {
   runApp(MyApp());
@@ -16,10 +16,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: MyHomePage(),
       routes: {
-        '/login': (context) => LoginPage(), // Define login route
-        '/signup': (context) => SignUpPage(), // Define sign up route
-        '/dashboard': (context) => Dashboard(), // Define dashboard route
-        '/profil': (context) => EditProfilePage(), // Define profile route
+        '/login': (context) => LoginPage(), 
+        '/signup': (context) => SignUpPage(), 
+        '/dashboard': (context) => Dashboard(), 
+        '/profil': (context) => EditProfilePage(), 
       },
     );
   }
@@ -65,12 +65,12 @@ class MyHomePage extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(height: 20), // Add some space between the RichText and the image
+                SizedBox(height: 20), 
                 Image.asset(
                   'assets/images/leleellips.png',
                   height: 450,
                 ),
-                SizedBox(height: 20), // Add some space between the image and the text
+                SizedBox(height: 20), 
                 Text(
                   "Get Started",
                   style: TextStyle(
@@ -85,7 +85,7 @@ class MyHomePage extends StatelessWidget {
                   children: [
                     ElevatedButton(
                       onPressed: () {
-                        Navigator.pushNamed(context, '/signup'); // Navigate to sign up page
+                        Navigator.pushNamed(context, '/signup');
                       },
                       child: Text(
                         'Sign Up',
@@ -100,7 +100,7 @@ class MyHomePage extends StatelessWidget {
                     ),
                     ElevatedButton(
                       onPressed: () {
-                        Navigator.pushNamed(context, '/login'); // Navigate to login page
+                        Navigator.pushNamed(context, '/login'); 
                       },
                       child: Text(
                         'Log In',

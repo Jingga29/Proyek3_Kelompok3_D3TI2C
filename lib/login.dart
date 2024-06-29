@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:proyek3/signup.dart';
-import 'login.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -59,8 +57,8 @@ class LoginPage extends StatelessWidget {
                   SizedBox(height: 20),
                   ElevatedButton(
                     onPressed: () {
-                      // Implementasi logika untuk tombol sign up
-                      print('Login');
+                      // Navigate to the dashboard page
+                      Navigator.pushNamed(context, '/dashboard');
                     },
                     style: ElevatedButton.styleFrom(
                       padding: EdgeInsets.symmetric(vertical: 15),
@@ -76,10 +74,7 @@ class LoginPage extends StatelessWidget {
                   SizedBox(height: 20),
                   TextButton(
                     onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => SignUpPage()),
-                      );
+                      Navigator.pushNamed(context, '/signup');
                     },
                     child: Text(
                       'Belum punya akun? Sign Up',
