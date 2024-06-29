@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'login.dart'; // Import login page
+import 'login.dart'; // import login page
 import 'signup.dart'; // Import sign up page
 import 'dashboard.dart'; // Import dashboard page
 import 'profil.dart'; // Import profile page
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: MyHomePage(),
       routes: {
-        // '/login': (context) => LoginPage(), // Define login route
+        '/login': (context) => LoginPage(), // Define login route
         '/signup': (context) => SignUpPage(), // Define sign up route
         '/dashboard': (context) => Dashboard(), // Define dashboard route
         '/profil': (context) => EditProfilePage(), // Define profile route
